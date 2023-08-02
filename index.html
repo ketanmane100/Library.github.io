@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/434b6475b4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#showMenu").click(function(){
+                $(".navbar-min").slideToggle();
+            });
+        });
+    </script>
+
+</head>    
+    
+<body>
+
+    <header>
+        <div class="nav">
+            <button id="showMenu"><i class="fa-solid fa-bars"></i></button>
+            
+            <!-- ! For Mobile -->
+            <div class="navbar-min">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="searchBooks.html"><li>Search Books &nbsp;<i class="fa-solid fa-magnifying-glass"></i></li></a>
+                    <a href="login.html"><li>Login</li></a>
+                </ul>
+            </div>
+           
+            <!-- ! For Big Screens -->
+            <div class="navbar-max">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="searchBooks.html"><li>Search Books <i class="fa-solid fa-magnifying-glass"></i></li></a>
+                    <a href="login.html"><li style="background-color: rgb(255, 255, 192);">Login</li></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+            <div class="img-block">
+                <img src="./images/bg-img3.jpg">
+                <div class="img-block-content">
+                    <p>Find the right resource<br>Better. Faster.</p>
+                </div>
+            </div>
+        
+        <div class="avl-contents">
+            <div class="books-qty">
+                <img src="images/stack-of-books.png">
+                <h1>
+                    BOOKS<br>
+                    10000+
+                </h1>
+            </div>
+            <div class="books-qty">
+                <img src="images/research.png">
+                <h1>
+                    RESEARCH PAPERS<br>
+                    500+
+                </h1>
+            </div>  
+            <div class="books-qty">
+                <img src="images/e-book.png">
+                <h1>
+                    E-BOOKS<br>
+                    1000+
+                </h1>
+            </div>            
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+           <div class="social-icon-container">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>        
+           <div class="social-icon-container">
+                <a href="https://www.whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i></a>
+           </div>        
+           <div class="social-icon-container">
+                <a href="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+           </div>        
+        </div>
+    </footer>
+
+</body>
+
+</html>
